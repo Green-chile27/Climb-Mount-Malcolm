@@ -1,0 +1,7 @@
+var bg_music := AudioStreamPlayer.new()
+
+func _ready():
+		if not bg_music.playing:
+			bg_music.stream = load("path to music")
+			bg_music.autoplay = true
+			add_child(bg_music)
