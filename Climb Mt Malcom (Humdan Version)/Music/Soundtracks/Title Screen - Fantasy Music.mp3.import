@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btswjhayb3r6d"
+path="res://.godot/imported/Title Screen - Fantasy Music.mp3-d7891321b8e21bb2167a91aa8e1748d7.mp3str"
+
+[deps]
+
+source_file="res://Music/Soundtracks/Title Screen - Fantasy Music.mp3"
+dest_files=["res://.godot/imported/Title Screen - Fantasy Music.mp3-d7891321b8e21bb2167a91aa8e1748d7.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

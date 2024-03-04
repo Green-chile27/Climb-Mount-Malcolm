@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://dny25r2s2oojk"]
+
+[ext_resource type="Script" path="res://scenes/Death.gd" id="1_rft0o"]
+[ext_resource type="Texture2D" uid="uid://cdhtk76ajjglr" path="res://cooltext452536816746677.png" id="2_dm6gp"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5rs4y"]
+light_mode = 2
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_r736a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d78m"]
+size = Vector2(356.5, 138)
+
+[node name="Death" type="Area2D"]
+script = ExtResource("1_rft0o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_5rs4y")
+position = Vector2(191.5, 77.5)
+scale = Vector2(357, 139)
+texture = SubResource("CanvasTexture_r736a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(192, 77)
+shape = SubResource("RectangleShape2D_3d78m")
+
+[node name="Cooltext452536816746677" type="Sprite2D" parent="."]
+position = Vector2(186, 82)
+texture = ExtResource("2_dm6gp")
