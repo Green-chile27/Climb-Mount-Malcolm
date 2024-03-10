@@ -51,3 +51,7 @@ func kill():
 	position.y = 367
 	Global.health = 3
 	label.text = 'health: ' + str(Global.health)
+
+
+func _on_enemy_body_entered(body):
+	pass # Replace with function body.
