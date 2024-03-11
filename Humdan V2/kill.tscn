@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://1b7koj5byxg6"]
+
+[ext_resource type="Script" path="res://scenes/KILL.gd" id="1_co23g"]
+[ext_resource type="Texture2D" uid="uid://dgyx0fyj7qt4c" path="res://Spike.png" id="2_6iim8"]
+
+[node name="Area2D" type="Area2D"]
+z_index = 1
+position = Vector2(46, 553)
+scale = Vector2(3.00106, 3)
+script = ExtResource("1_co23g")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-2.02948, 1.09806)
+scale = Vector2(0.338374, 0.289172)
+polygon = PackedVector2Array(-0.649345, 1.56252, -0.389603, 0.937531, 28.1818, -63.7499, 55.9741, 1.87503)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(7.27873, -6.94891)
+scale = Vector2(0.0465689, 0.0465692)
+texture = ExtResource("2_6iim8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
